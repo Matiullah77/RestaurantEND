@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Reservations | Saryarka Kitchen</title><meta name="description" content="Saryarka Kitchen: modern Kazakh and Central Asian cooking in Astana.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="css/style.css">
+</head><body>
+<header class="site-header"><div class="container header-inner"><a class="logo" href="index.html"><span class="logo-mark">&#10022;</span> Saryarka Kitchen</a><nav aria-label="Main navigation"><ul class="nav-list"><li><a class="nav-link-custom" href="index.html">Home</a></li><li><a class="nav-link-custom" href="about.html">About</a></li><li><a class="nav-link-custom" href="menu.html">Menu</a></li><li><a class="nav-link-custom" href="gallery.html">Gallery</a></li><li><a class="nav-link-custom active" href="contact.html">Reservations</a></li></ul></nav></div></header>
+<main><section class="page-title"><div class="container"><h1>Reserve a table</h1><p class="lead mb-0">Send a request and we will confirm by phone or email.</p></div></section>
+<section class="py-5"><div class="container"><div class="row g-5"><div class="col-lg-7">
+  <form class="contact-form" action="#" method="post" onsubmit="return false;"><h2 class="h3 mb-3">Reservation request</h2>
+    <div class="mb-3"><label for="name" class="form-label">Full name</label><input type="text" id="name" name="name" class="form-control" placeholder="Your name" required></div>
+    <div class="mb-3"><label for="email" class="form-label">Email</label><input type="email" id="email" name="email" class="form-control" placeholder="you@example.com" required></div>
+    <div class="row g-3 mb-3"><div class="col-sm-6"><label for="date" class="form-label">Date</label><input type="date" id="date" name="date" class="form-control" required></div><div class="col-sm-6"><label for="guests" class="form-label">Guests</label><select id="guests" name="guests" class="form-select"><option>1-2</option><option>3-4</option><option>5-8</option><option>9 or more</option></select></div></div>
+    <div class="mb-3"><label for="message" class="form-label">Special requests</label><textarea id="message" name="message" class="form-control" rows="4" placeholder="Allergies, birthday, high chair..."></textarea></div>
+    <button type="submit" class="btn btn-saffron" onclick="alert('This is a front-end student project. Please use the guest registration form below to test validation.');">Send request</button>
+  </form>
+  <form class="contact-form mt-4" id="registrationForm" novalidate><h2 class="h3 mb-2">Guest registration</h2><p>Create a sample guest account to receive updates about the restaurant. This form demonstrates client-side validation.</p>
+    <div id="registrationAlert" class="alert d-none" role="alert"></div>
+    <div class="mb-3"><label for="regName" class="form-label">Full name *</label><input type="text" id="regName" class="form-control" placeholder="Your full name" required><small class="field-feedback"></small></div>
+    <div class="mb-3"><label for="regEmail" class="form-label">Email address *</label><input type="email" id="regEmail" class="form-control" placeholder="you@example.com" required><small class="field-feedback"></small></div>
+    <div class="mb-2"><label for="regPassword" class="form-label">Password *</label><input type="password" id="regPassword" class="form-control" placeholder="At least 8 characters" required><small class="field-feedback"></small></div>
+    <div class="password-meter mt-2"><div id="passwordMeterFill" class="password-meter-fill"></div></div><small id="passwordStrengthText" class="text-muted">Enter a password.</small>
+    <div class="mt-3 mb-3"><label for="confirmPassword" class="form-label">Confirm password *</label><input type="password" id="confirmPassword" class="form-control" placeholder="Enter your password again" required><small class="field-feedback"></small></div>
+    <div class="mb-3"><label for="regMessage" class="form-label">Message / special request *</label><textarea id="regMessage" class="form-control" rows="3" placeholder="Write at least 5 characters" required></textarea><small class="field-feedback"></small></div>
+    <button type="submit" class="btn btn-saffron">Register</button>
+  </form>
+</div><div class="col-lg-5"><aside class="card-box"><h2 class="h4">Find us</h2><p>Dostyk Street 10, Astana<br>Phone: +7 777 000 0000</p><h2 class="h4">Opening hours</h2><p class="mb-0">Mon-Fri 11:00-23:00<br>Sat 10:00-00:00<br>Sun 10:00-22:00</p></aside></div></div></div></section></main>
+<footer class="site-footer"><div class="container footer-inner"><div><p class="footer-title">Saryarka Kitchen</p><p class="mb-1">Dostyk Street 10, Astana, Kazakhstan</p><p class="mb-1">Phone: +7 777 000 0000</p><p class="mb-0">Email: <a href="mailto:hello@saryarka.example">hello@saryarka.example</a></p></div><ul class="social-list"><li><a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://www.facebook.com/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://t.me/" target="_blank" rel="noopener">Telegram</a></li></ul></div><p class="copyright text-center mb-0">&copy; 2026 Saryarka Kitchen. Student project for Web Technology.</p></footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="js/script.js"></script>
+</body></html>
