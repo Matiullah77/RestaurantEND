@@ -152,7 +152,7 @@ You can also use the **Live Server** extension in Visual Studio Code to run the 
 
 ## 🔗 Project Links
 
-- **GitHub Repository:** [Add Your Repository URL](https://github.com/)
+- **GitHub Repository:** [https://github.com/Matiullah77/RestaurantEND.git)
 - **Live Website:** [Add Your Published Website URL](https://github.com/)
 
 ---
