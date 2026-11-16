@@ -1,6 +1,6 @@
 # 🍽️ Saryarka Kitchen
 
-### Web Technology — Endterm Project
+### Web Technology — Final Project
 
 \<p align="center">
 &#x20; A responsive restaurant website showcasing Kazakh and Central Asian cuisine in Astana.
