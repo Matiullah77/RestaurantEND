@@ -1,9 +1,10 @@
 # 🍽️ Saryarka Kitchen
+
 ### Web Technology — Endterm Project
 
-<p align="center">
-  A responsive restaurant website showcasing Kazakh and Central Asian cuisine in Astana.
-</p>
+\<p align="center">
+&#x20; A responsive restaurant website showcasing Kazakh and Central Asian cuisine in Astana.
+\</p>
 
 ---
 
@@ -11,38 +12,51 @@
 
 **Saryarka Kitchen** is a multi-page restaurant website developed as part of our Web Technology Endterm Project at Astana IT University.
 
-The project continues from our original Midterm Project. We kept the original restaurant concept and website design while improving its functionality using JavaScript and jQuery.
+The project continues from our original Midterm Project. We maintained the original restaurant concept and visual design while improving the website with interactive features using JavaScript and jQuery.
 
-The website allows visitors to explore the restaurant, view its food menu and gallery, and interact with registration and menu features.
+Visitors can explore restaurant information, browse the menu and gallery, register as guests, discover food inspiration, and interact with different website features.
 
 ## 👥 Group Members
 
-| Name | Role |
-|---|---|
+| Name            | Role              |
+| --------------- | ----------------- |
 | Matiullah Zaman | Project Developer |
-| Zainab Noori | Project Developer |
+| Zainab Noori    | Project Developer |
 
-Both members contributed to the development and improvement of the website, including HTML, CSS, JavaScript, and jQuery.
+Both members contributed to the development and improvement of the website.
 
 ---
 
 ## ✨ Main Features
 
 ### 🌐 Website Pages
-- **Home:** Restaurant introduction and main information.
-- **About:** Restaurant story and background.
+
+- **Home:** Restaurant introduction, highlights, and food inspiration.
+- **About:** Restaurant story and frequently asked questions.
 - **Menu:** Food and drink items with interactive features.
 - **Gallery:** Collection of restaurant and food images.
 - **Reservations:** Guest registration and reservation information.
 
-### 📝 Guest Registration
+### 🌓 Light and Dark Mode
+
+- Switch between light and dark themes.
+- Theme preference saved using `localStorage`.
+- Selected theme remains active after refreshing the page.
+- Consistent theme across all five pages.
+
+### 🔐 Guest Registration and Sign In
+
 - Required-field validation.
-- Email validation using Regular Expressions.
-- Password strength indicator (Weak, Medium, Strong).
+- Email validation.
+- Password strength indicator.
 - Password confirmation.
-- Real-time validation feedback.
+- Guest account information stored using `localStorage`.
+- Sign-in and sign-out functionality.
+- Welcome message displayed across all website pages.
+- Login status remains available after refreshing the page.
 
 ### 🍴 Interactive Menu
+
 - Live menu search.
 - Case-insensitive search functionality.
 - Category filters:
@@ -59,31 +73,56 @@ Both members contributed to the development and improvement of the website, incl
 - Confirmation message before deleting items.
 
 ### 🖼️ Gallery
+
 - Responsive image grid.
 - Image lightbox.
 - Previous and next image navigation.
 - Keyboard navigation using arrow keys.
-- Smooth image transitions using jQuery fade effects.
+- Smooth image transitions using jQuery.
+
+### ❓ Frequently Asked Questions
+
+- Five restaurant-related questions.
+- Answers shown and hidden using jQuery `.slideToggle()`.
+- Animated opening and closing.
+- Dynamic plus and minus indicators.
+
+### 🍲 Food Inspiration API
+
+- Integrated with TheMealDB public API.
+- Uses JavaScript `fetch()` to retrieve meal information.
+- Processes API responses in JSON format.
+- Displays meal name, image, category, and origin.
+- Button allows visitors to discover random meals.
+- Includes error handling if the API request fails.
+
+### 📱 Responsive Design
+
+- Responsive layout for desktop, tablet, and mobile.
+- Bootstrap components and CSS media queries.
+- Flexible navigation, images, and content sections.
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Technology | Purpose |
-|---|---|
-| HTML5 | Website structure |
-| CSS3 | Styling and responsive design |
-| Bootstrap 5.3.3 | Layout and responsive components |
-| JavaScript | Interactive functionality |
-| jQuery 3.7.1 | DOM manipulation and animations |
-| Bootstrap Modal | Modal windows |
+| Technology      | Purpose                                       |
+| --------------- | --------------------------------------------- |
+| HTML5           | Website structure                             |
+| CSS3            | Styling and responsive design                 |
+| Bootstrap 5.3.3 | Layout and responsive components              |
+| JavaScript      | Interactive functionality and API integration |
+| jQuery 3.7.1    | DOM manipulation and animations               |
+| Fetch API       | Retrieving external API data                  |
+| TheMealDB API   | Random meal information                       |
+| localStorage    | Saving theme and guest login information      |
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-saryarka-endterm/
+RestaurantEND/
 │
 ├── index.html
 ├── about.html
@@ -98,12 +137,6 @@ saryarka-endterm/
 │   └── script.js
 │
 ├── images/
-│   ├── dish1.jpg
-│   ├── dish2.jpg
-│   ├── dish3.jpg
-│   ├── dish4.jpg
-│   ├── dish5.jpg
-│   └── dish6.jpg
 │
 └── README.md
 ```
@@ -115,70 +148,73 @@ saryarka-endterm/
 ### 👨‍💻 Matiullah Zaman
 
 - Developed the HTML structure and content for the Home, Menu, and Reservations pages.
-- Worked on CSS styling and responsive layouts for different screen sizes.
+- Worked on CSS styling and responsive layouts.
 - Implemented guest registration form validation using JavaScript.
-- Added email validation using Regular Expressions.
-- Developed the password strength indicator and password confirmation functionality.
-- Implemented live menu search and category filtering using JavaScript and jQuery.
-- Participated in integrating and testing the website's interactive features.
+- Added email validation and password strength functionality.
+- Implemented live menu search and category filtering.
+- Participated in integrating and testing website features.
 
 ### 👩‍💻 Zainab Noori
 
 - Developed the HTML structure and content for the About and Gallery pages.
-- Worked on CSS styling, Bootstrap components, and the visual presentation of the website.
-- Contributed to JavaScript and jQuery functionality across the website.
-- Implemented menu CRUD operations, including adding, editing, and deleting menu items.
+- Worked on CSS styling, Bootstrap components, and visual presentation.
+- Contributed to JavaScript and jQuery functionality.
+- Implemented menu CRUD operations.
 - Developed the gallery lightbox with previous and next image navigation.
-- Added keyboard navigation and smooth image transitions using jQuery.
-- Participated in reviewing and testing the website's pages and responsive design.
+- Added keyboard navigation and smooth image transitions.
+- Participated in reviewing and testing the website.
 
 ### 🤝 Team Collaboration
 
-Both members collaborated on connecting all five pages, maintaining a consistent website design, integrating JavaScript and jQuery features, and testing the complete website before submission.
+Both members collaborated on connecting all five pages, maintaining a consistent design, integrating website functionality, and testing the complete project.
 
 ---
 
 ## 🚀 How to Run the Project
 
-1. Download or clone this repository.
+1. Clone or download this repository.
 2. Open the project folder in Visual Studio Code.
 3. Make sure all project folders and files are in their correct locations.
-4. Open `index.html` in your browser.
-5. Navigate through the website using the navigation menu.
-
-You can also use the **Live Server** extension in Visual Studio Code to run the website locally.
+4. Install the Live Server extension if it is not already installed.
+5. Open `index.html` and run it using Live Server.
+6. Navigate through the website using the navigation menu.
 
 ---
 
 ## 🔗 Project Links
 
-- **GitHub Repository:** [https://github.com/Matiullah77/RestaurantEND.git)
-- **Live Website:** [Add Your Published Website URL](https://github.com/)
+- **GitHub Repository:** [https://github.com/Matiullah77/RestaurantEND](https://github.com/Matiullah77/RestaurantEND)
+- **Live Website:** [https://matiullah77.github.io/RestaurantEND/](https://matiullah77.github.io/RestaurantEND/)
 
 ---
 
 ## 📌 Important Notes
 
 - This project continues from our original Midterm Project and uses the same GitHub repository.
-- The registration form demonstrates client-side validation only. It does not create real user accounts or send information to a server.
-- Menu CRUD operations work in the browser, but changes are not permanently stored in a database.
-- The website uses restaurant images stored in the `images` folder.
-- The website is designed to work on desktop, tablet, and mobile screen sizes.
+- Guest registration and sign-in demonstrate client-side functionality using `localStorage`. They are not connected to a secure authentication server.
+- Passwords are stored in browser storage for demonstration purposes only. This is not suitable for real-world authentication.
+- Menu CRUD operations work in the browser and are not connected to a database.
+- The reservation form demonstrates client-side interaction and does not create real restaurant bookings.
+- Food Inspiration retrieves meal information from an external public API.
+- An internet connection is required for the API feature.
+- Website images are stored in the `images` folder.
+
+---
+
+## 🤖 AI Acknowledgment
+
+AI tools were used as supporting resources during development for understanding programming concepts, troubleshooting code, improving functionality, and preparing project documentation. The team reviewed and tested the implemented features.
 
 ---
 
 ## 🎓 Academic Information
 
-**University:** Astana IT University (AITU)  
-**Course:** Web Technology  
-**Project:** Endterm Project  
-**Project Name:** Saryarka Kitchen  
+**University:** Astana IT University (AITU)
+**Course:** Web Technology
+**Project:** Endterm Project
+**Project Name:** Saryarka Kitchen
+**Group:** 2501
 
 ---
 
-<p align="center">
-  <strong>Saryarka Kitchen</strong><br>
-  Bringing Kazakh and Central Asian flavors to the web.
-  <br><br>
-  Developed by <strong>Matiullah Zaman & Zainab Noori</strong>
-</p>
+\<p align="center">   \<strong>Saryarka Kitchen\</strong>\<br>   Bringing Kazakh and Central Asian flavors to the web.   \<br>\<br>   Developed by \<strong>Matiullah Zaman & Zainab Noori\</strong> \</p>

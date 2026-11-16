@@ -212,3 +212,130 @@ $(document).ready(function () {
     });
   }
 });
+$(document).ready(function () {
+  const savedTheme = localStorage.getItem("theme");
+
+  if (savedTheme === "dark") {
+    $("body").addClass("dark-theme");
+    $("#themeToggle").text("Light Mode");
+  }
+
+  $("#themeToggle").click(function () {
+    $("body").toggleClass("dark-theme");
+
+    if ($("body").hasClass("dark-theme")) {
+      localStorage.setItem("theme", "dark");
+      $(this).text("Light Mode");
+    } else {
+      localStorage.setItem("theme", "light");
+      $(this).text("Dark Mode");
+    }
+  });
+});
+$(document).ready(function () {
+
+  const registrationForm = document.getElementById("registrationForm");
+
+  if (registrationForm) {
+    registrationForm.addEventListener("submit", function () {
+      const name = $("#regName").val().trim();
+      const email = $("#regEmail").val().trim();
+      const password = $("#regPassword").val();
+      const confirmPassword = $("#confirmPassword").val();
+      const message = $("#regMessage").val().trim();
+
+      if (
+        name.length >= 2 &&
+        email.includes("@") &&
+        password.length >= 8 &&
+        password === confirmPassword &&
+        message.length >= 5
+      ) {
+        localStorage.setItem("guestAccount", JSON.stringify({
+          name: name,
+          email: email,
+          password: password
+        }));
+      }
+    }, true);
+  }
+  const savedGuest = localStorage.getItem("loggedInGuest");
+  if (savedGuest) {
+  $("#guestStatus").text("Welcome, " + savedGuest + "!");
+}
+
+if (savedGuest) {
+  $("#loginMessage").text("Welcome back, " + savedGuest + "!");
+}
+
+  $("#loginForm").submit(function (event) {
+    event.preventDefault();
+
+    const email = $("#loginEmail").val().trim();
+    const password = $("#loginPassword").val();
+    const account = JSON.parse(localStorage.getItem("guestAccount"));
+
+    if (account && email === account.email && password === account.password) {
+      localStorage.setItem("loggedInGuest", account.name);
+      $("#loginMessage").text("Welcome, " + account.name + "!");
+    } else {
+      $("#loginMessage").text("Incorrect email or password. Please register first.");
+    }
+  });
+
+  $("#logoutButton").click(function () {
+    localStorage.removeItem("loggedInGuest");
+    $("#loginMessage").text("You have signed out.");
+    $("#loginForm")[0].reset();
+  });
+
+});
+$(document).ready(function () {
+  $(".faq-question").click(function () {
+    $(this).next(".faq-answer").slideToggle(300);
+
+    const indicator = $(this).find("span");
+
+    if (indicator.text() === "+") {
+      indicator.text("−");
+    } else {
+      indicator.text("+");
+    }
+  });
+});
+$(document).ready(function () {
+  $("#getMealButton").click(function () {
+    $("#mealResult").html("<p>Loading...</p>");
+
+    fetch("https://www.themealdb.com/api/json/v1/1/random.php")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Something went wrong");
+        }
+        return response.json();
+      })
+      .then(data => {
+        const meal = data.meals[0];
+
+        $("#mealResult").html(`
+          <h3>${meal.strMeal}</h3>
+          <img src="${meal.strMealThumb}" alt="${meal.strMeal}"
+               class="img-fluid rounded mt-3" style="max-width: 350px;">
+          <p class="mt-3">Category: ${meal.strCategory}</p>
+          <p>Origin: ${meal.strArea}</p>
+        `);
+      })
+      .catch(() => {
+        $("#mealResult").html(
+          "<p>Sorry, we couldn't load a meal. Please try again.</p>"
+        );
+      });
+  });
+});
+$(document).ready(function () {
+  const savedGuest = localStorage.getItem("loggedInGuest");
+
+  if (savedGuest) {
+    $("#guestStatus").text("Welcome, " + savedGuest + "!");
+  }
+});
