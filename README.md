@@ -10,11 +10,13 @@
 
 ## 📌 Project Overview
 
-**Saryarka Kitchen** is a multi-page restaurant website developed as part of our Web Technology Endterm Project at Astana IT University.
+**Saryarka Kitchen** is a multi-page restaurant website developed as part of the Web Technology Final Project at Astana IT University.
 
-The project continues from our original Midterm Project. We maintained the original restaurant concept and visual design while improving the website with interactive features using JavaScript and jQuery.
+The project continues from our original Midterm and Endterm projects. We maintained the restaurant concept and original design while improving the website with additional interactive features using HTML, CSS, Bootstrap, JavaScript and jQuery.
 
-Visitors can explore restaurant information, browse the menu and gallery, register as guests, discover food inspiration, and interact with different website features.
+In the Final Project, we added Light and Dark Mode, guest sign-in using localStorage, an interactive FAQ section and an external food API.
+
+Visitors can explore restaurant information, browse the menu and gallery, register as guests, discover food inspiration and interact with different website features.
 
 ## 👥 Group Members
 
@@ -23,7 +25,7 @@ Visitors can explore restaurant information, browse the menu and gallery, regist
 | Matiullah Zaman | Project Developer |
 | Zainab Noori    | Project Developer |
 
-Both members contributed to the development and improvement of the website.
+Both members contributed to the development, improvement, integration and testing of the website.
 
 ---
 
@@ -31,13 +33,13 @@ Both members contributed to the development and improvement of the website.
 
 ### 🌐 Website Pages
 
-- **Home:** Restaurant introduction, highlights, and food inspiration.
-- **About:** Restaurant story and frequently asked questions.
+- **Home:** Restaurant introduction, highlights and food inspiration.
+- **About:** Restaurant story, promises, team information and frequently asked questions.
 - **Menu:** Food and drink items with interactive features.
 - **Gallery:** Collection of restaurant and food images.
-- **Reservations:** Guest registration and reservation information.
+- **Reservations:** Guest registration, sign-in and reservation information.
 
-### 🌓 Light and Dark Mode
+### 🌓 Light and Dark Mode — Final Addition
 
 - Switch between light and dark themes.
 - Theme preference saved using `localStorage`.
@@ -66,10 +68,10 @@ Both members contributed to the development and improvement of the website.
   - Dessert
   - Drinks
 - CRUD operations:
-  - Create new menu items.
-  - Read and display menu items.
-  - Update existing menu items.
-  - Delete menu items.
+  - **Create:** Add new menu items.
+  - **Read:** Display menu items.
+  - **Update:** Edit existing menu items.
+  - **Delete:** Remove menu items.
 - Confirmation message before deleting items.
 
 ### 🖼️ Gallery
@@ -80,27 +82,27 @@ Both members contributed to the development and improvement of the website.
 - Keyboard navigation using arrow keys.
 - Smooth image transitions using jQuery.
 
-### ❓ Frequently Asked Questions
+### ❓ Frequently Asked Questions — Final Addition
 
 - Five restaurant-related questions.
 - Answers shown and hidden using jQuery `.slideToggle()`.
 - Animated opening and closing.
 - Dynamic plus and minus indicators.
 
-### 🍲 Food Inspiration API
+### 🍲 Food Inspiration API — Final Addition
 
 - Integrated with TheMealDB public API.
 - Uses JavaScript `fetch()` to retrieve meal information.
 - Processes API responses in JSON format.
-- Displays meal name, image, category, and origin.
+- Displays meal name, image, category and origin.
 - Button allows visitors to discover random meals.
 - Includes error handling if the API request fails.
 
 ### 📱 Responsive Design
 
-- Responsive layout for desktop, tablet, and mobile.
+- Responsive layout for desktop, tablet and mobile.
 - Bootstrap components and CSS media queries.
-- Flexible navigation, images, and content sections.
+- Flexible navigation, images and content sections.
 
 ---
 
@@ -147,26 +149,54 @@ RestaurantEND/
 
 ### 👨‍💻 Matiullah Zaman
 
-- Developed the HTML structure and content for the Home, Menu, and Reservations pages.
+**Midterm and Endterm Contributions:**
+
+- Developed the HTML structure and content for the Home, Menu and Reservations pages.
 - Worked on CSS styling and responsive layouts.
 - Implemented guest registration form validation using JavaScript.
 - Added email validation and password strength functionality.
 - Implemented live menu search and category filtering.
 - Participated in integrating and testing website features.
 
+**Final Project Contributions and Knowledge:**
+
+- Understands the Light and Dark Mode functionality and how the theme preference is saved using `localStorage`.
+- Understands guest registration, sign-in, sign-out and the welcome message functionality.
+- Understands how `localStorage` keeps guest login information available after refreshing the page.
+- Understands the interactive FAQ and how jQuery controls showing and hiding answers.
+- Understands the Food Inspiration feature and how TheMealDB API provides meal information.
+- Can explain the overall website structure, technologies and responsive design.
+
 ### 👩‍💻 Zainab Noori
 
+**Midterm and Endterm Contributions:**
+
 - Developed the HTML structure and content for the About and Gallery pages.
-- Worked on CSS styling, Bootstrap components, and visual presentation.
+- Worked on CSS styling, Bootstrap components and visual presentation.
 - Contributed to JavaScript and jQuery functionality.
 - Implemented menu CRUD operations.
 - Developed the gallery lightbox with previous and next image navigation.
 - Added keyboard navigation and smooth image transitions.
 - Participated in reviewing and testing the website.
 
+**Final Project Contributions and Knowledge:**
+
+- Understands the Light and Dark Mode functionality and how the theme preference is saved using `localStorage`.
+- Understands guest registration, sign-in, sign-out and the welcome message functionality.
+- Understands how `localStorage` keeps guest login information available after refreshing the page.
+- Understands the interactive FAQ and how jQuery controls showing and hiding answers.
+- Understands the Food Inspiration feature and how TheMealDB API provides meal information.
+- Can explain the overall website structure, technologies and responsive design.
+
 ### 🤝 Team Collaboration
 
-Both members collaborated on connecting all five pages, maintaining a consistent design, integrating website functionality, and testing the complete project.
+Both members worked together to:
+
+- Connect and maintain all five website pages.
+- Maintain a consistent design and user experience.
+- Integrate and test the website features.
+- Review the Final Project additions, including Light and Dark Mode, guest sign-in, FAQ and Food Inspiration API.
+- Understand the overall project functionality and technologies.
 
 ---
 
@@ -183,14 +213,14 @@ Both members collaborated on connecting all five pages, maintaining a consistent
 
 ## 🔗 Project Links
 
-- **GitHub Repository:** [https://github.com/Matiullah77/RestaurantEND](https://github.com/Matiullah77/RestaurantEND)
-- **Live Website:** [https://matiullah77.github.io/RestaurantEND/](https://matiullah77.github.io/RestaurantEND/)
+- **GitHub Repository:** [Saryarka Kitchen — GitHub](https://github.com/Matiullah77/RestaurantEND)
+- **Live Website:** [Saryarka Kitchen — Live Website](https://matiullah77.github.io/RestaurantEND/)
 
 ---
 
 ## 📌 Important Notes
 
-- This project continues from our original Midterm Project and uses the same GitHub repository.
+- This Final Project continues from our original Midterm and Endterm projects and uses the same GitHub repository.
 - Guest registration and sign-in demonstrate client-side functionality using `localStorage`. They are not connected to a secure authentication server.
 - Passwords are stored in browser storage for demonstration purposes only. This is not suitable for real-world authentication.
 - Menu CRUD operations work in the browser and are not connected to a database.
@@ -203,7 +233,7 @@ Both members collaborated on connecting all five pages, maintaining a consistent
 
 ## 🤖 AI Acknowledgment
 
-AI tools were used as supporting resources during development for understanding programming concepts, troubleshooting code, improving functionality, and preparing project documentation. The team reviewed and tested the implemented features.
+AI tools were used as supporting resources during development for understanding programming concepts, troubleshooting code, improving functionality and preparing project documentation. The team reviewed and tested the implemented features.
 
 ---
 
@@ -211,10 +241,10 @@ AI tools were used as supporting resources during development for understanding 
 
 **University:** Astana IT University (AITU)
 **Course:** Web Technology
-**Project:** Endterm Project
+**Project:** Final Project
 **Project Name:** Saryarka Kitchen
 **Group:** 2501
 
 ---
 
-\<p align="center">   \<strong>Saryarka Kitchen\</strong>\<br>   Bringing Kazakh and Central Asian flavors to the web.   \<br>\<br>   Developed by \<strong>Matiullah Zaman & Zainab Noori\</strong> \</p>
+\<p align="center">   \<strong>Saryarka Kitchen\</strong>\<br>   Bringing Kazakh and Central Asian flavors to the web.\<br>\<br>   Developed by \<strong>Matiullah Zaman & Zainab Noori\</strong> \</p>
